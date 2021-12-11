@@ -2,6 +2,9 @@ const express = require("express");
 
 const app = express();
 
+const jsonFilePath = process.argv[2];
+console.log(jsonFilePath);
+
 app.get("/", (req, res) => {
   res.status(200).json({ name: "hosein" });
 });
