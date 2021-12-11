@@ -1,9 +1,14 @@
+const fs = require("fs");
+
 const express = require("express");
 
 const app = express();
 
 const jsonFilePath = process.argv[2];
-console.log(jsonFilePath);
+
+const jsonData = fs.readFileSync(jsonFilePath).toString();
+
+console.log(jsonData);
 
 app.get("/", (req, res) => {
   res.status(200).json({ name: "hosein" });
