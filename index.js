@@ -1,6 +1,7 @@
 const fs = require("fs");
 
 const express = require("express");
+require("dotenv").config();
 
 const app = express();
 
@@ -16,7 +17,7 @@ app.get("/", (req, res) => {
 });
 
 // Event Listner
-const PORT = 3001;
+const PORT = process.env.PORT;
 app.listen(PORT, () =>
   console.log(`Server is Running on : http://127.0.0.1:${PORT}`)
 );
