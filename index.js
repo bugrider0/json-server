@@ -8,7 +8,7 @@ const app = express();
 app.use(require("./routes/indexRoute"));
 
 // Event Listner
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () =>
   console.log(`Server is Running on : http://127.0.0.1:${PORT}`)
 );
