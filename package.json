@@ -4,9 +4,8 @@
   "description": "Zero Config API Server for Using Front-End Developers",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "exam": "node index.js ./example.json",
-    "dev": "nodemon index.js"
+    "start": "node index.js ./example.json",
+    "dev": "nodemon index.js ./example.json"
   },
   "repository": {
     "type": "git",
