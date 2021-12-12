@@ -11,3 +11,5 @@ npm i
 ```
 npm start <Your json File Path>
 ```
+
+![ScreenShot](./screenShot.jpg)
